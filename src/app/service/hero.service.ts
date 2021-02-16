@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Observable } from 'rxjs';
+import { Observable, of, BehaviorSubject } from 'rxjs';
 
 import { Hero } from '../model/hero';
 
@@ -17,8 +17,11 @@ export class HeroService {
     {id: 5, name: 'Flash', superPower: 'Speed', address: 'Basement'},
   ];
 
+  
   constructor() { }
 
     getAll(): void {
+      this.heroList;
   }
+
 }
