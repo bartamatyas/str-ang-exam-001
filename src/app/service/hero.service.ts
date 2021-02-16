@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Observable, of, BehaviorSubject } from 'rxjs';
+import { of } from 'rxjs';
 
 import { Hero } from '../model/hero';
 
@@ -20,8 +20,9 @@ export class HeroService {
   
   constructor() { }
 
-    getAll(): void {
-      this.heroList;
-  }
+    
+  getAllHeroes(): Hero[] {
+    return this.heroList;
+   }
 
 }
